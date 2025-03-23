@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Divyaaaaa! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(255,105,180,0.5);
+        }
+
+        h3 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff66ff, 0 0 35px #ff99ff;
+    }
+}
+
+
+        .photos-container {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            width: 200%;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .photo-item {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 400px;
+            margin: 0 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255,105,180,0.3);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Gradient overlays */
+        .photos-container:before,
+        .photos-container:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 200px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .photos-container:before {
+            left: 0;
+            background: linear-gradient(to right, #000000 0%, transparent 100%);
+        }
+
+        .photos-container:after {
+            right: 0;
+            background: linear-gradient(to left, #000000 0%, transparent 100%);
+        }
+
+        /* Glowing animation effect */
+        .photo-item::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff69b4, #ff1493, #ff69b4);
+            z-index: -1;
+            animation: glow 2s linear infinite;
+            opacity: 0.5;
+            border-radius: 15px;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes glow {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0.3; }
+        }
+
+        .message {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: rgba(26,26,26,0.8);
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in;
+            border: 1px solid #ff69b4;
+        }
+
+        @media (max-width: 768px) {
+            .photo-item {
+                width: 250px;
+                height: 350px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .photo-item {
+                width: 200px;
+                height: 300px;
+                margin: 0 10px;
+            }
+
+            .photos-container {
+                animation-duration: 15s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Happy Birthday Divyaaaaa! 🎂</h1>
+            <p>Shree Madhav Bless You🌟</p>
+        </header>
+
+        <div class="message">
+            <p>On your special day, I pray that joy, love, and endless blessings fill your life. May every moment bring you happiness, every challenge make you stronger, and every dream come true. You are a beautiful soul, and you deserve all the goodness in the world.
+
+                May your heart always be light, your smile forever bright, and your journey ahead be filled with love and success. Stay happy, stay blessed, and always be the amazing person you are.<br>
+            </p>
+            <h3>Wishing you a year ahead full of love, laughter, and countless beautiful memories! 💖✨</h3>
+        </div>
+
+        <div class="photos-container">
+            <!-- Original 20 photos -->
+            <div class="photo-item">
+                <img src="img (1).jpg" alt="Memory 1">
+            </div>
+            <div class="photo-item">
+                <img src="img (2).jpg" alt="Memory 2">
+            </div>
+            <div class="photo-item">
+                <img src="img (3).jpg" alt="Memory 3">
+            </div>
+            <div class="photo-item">
+                <img src="img (4).jpg" alt="Memory 4">
+            </div>
+            
+            <div class="photo-item">
+                <img src="img (5).jpg" alt="Memory 5">
+            </div>
+
+            <!-- Duplicated photos for seamless loop -->
+            <div class="photo-item">
+                <img src="img (6).jpg" alt="Memory 6">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (7).jpg" alt="Memory 7">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (8).jpg" alt="Memory 8">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (9).jpg" alt="Memory 9">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (10).jpg" alt="Memory 10">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (11).jpg" alt="Memory 11">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (12).jpg" alt="Memory 12">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (13).jpg" alt="Memory 13">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (14).jpg" alt="Memory 14">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (15).jpg" alt="Memory 15">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (16).jpg" alt="Memory 16">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (17).jpg" alt="Memory 17">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (18).jpg" alt="Memory 18">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (19).jpg" alt="Memory 19">
+            </div>
+
+            <div class="photo-item">
+                <img src="img (20).jpg" alt="Memory 20">
+            </div>
+            <!-- Duplicate all 20 photos here -->
+        </div>
+    </div>
+
+    <script>
+        // Duplicate photos for infinite loop
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.photos-container');
+            const originalPhotos = container.innerHTML;
+            container.innerHTML = originalPhotos + originalPhotos;
+        });
+
+        // Add click animation
+        document.querySelectorAll('.photo-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    item.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
